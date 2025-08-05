@@ -1,20 +1,25 @@
+import { useLanguage } from '../hooks/useLanguage';
 
 const Hero = () => {
-  return (
-<section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 bg-transparent dark:bg-transparent">
+  const { t, language } = useLanguage();
 
+  // Usar el mismo id de sección que el Header según el idioma
+  const projectsHref = language === 'en' ? '#projects' : '#proyectos';
+
+  return (
+    <section key={language} className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 bg-transparent dark:bg-transparent">
       <h2 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
-        ¡Hola! Soy Kendall Tencio
+        {t('hero.title')}
       </h2>
       <p className="text-lg md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mb-8">
-        Desarrollador Backend apasionado por construir APIs robustas, eficientes y seguras. Bienvenido a mi portafolio.
+        {t('hero.description')}
       </p>
       <div className="flex flex-wrap justify-center gap-4">
         <a
-          href="#proyectos"
+          href={projectsHref}
           className="inline-block px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600 transition"
         >
-          Ver mis proyectos
+          {t('hero.projectsButton')}
         </a>
         <a
           href="/Resume.pdf"
@@ -23,7 +28,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="inline-block px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600 transition"
         >
-          Descargar CV
+          {t('hero.downloadCV')}
         </a>
       </div>
     </section>

@@ -1,0 +1,16 @@
+{
+  "hero.title": "Hi, I'm Kendall",
+  "hero.subtitle": "Software Developer",
+  "hero.description": "I build high-quality applications with modern technologies.",
+  "hero.projectsButton": "Projects",
+  "hero.downloadCV": "Download CV",
+  "about.title": "About Me",
+  "about.text": "I am a software developer passionate about building scalable systems.",
+  "role": "Full Stack Developer",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}

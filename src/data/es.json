@@ -1,0 +1,17 @@
+{
+  "hero.title": "Hola, soy Kendall",
+  "hero.subtitle": "Desarrollador de Software",
+  "hero.description": "Construyo aplicaciones de alta calidad con tecnologías modernas.",
+  "hero.projectsButton": "Proyectos",
+  "hero.downloadCV": "Descargar CV",
+  "about.title": "Sobre mí",
+  "about.text": "Soy un desarrollador de software apasionado por crear sistemas escalables.",
+  "role": "Desarrollador Full Stack",
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  }
+}
+

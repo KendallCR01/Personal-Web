@@ -31,7 +31,7 @@ const Background = () => {
           },
           particles: {
             color: {
-              value: isDarkMode ? "#ffffff" : "#000000", // 👈 aquí el color correcto
+              value: isDarkMode ? "#0a5cb8" : "#000000",
             },
             opacity: {
               value: { min: 0.1, max: 1 },
@@ -43,6 +43,8 @@ const Background = () => {
             move: {
               enable: true,
               speed: 1,
+              direction: "none",
+              outModes: { default: "out" },
             },
             shape: {
               type: "circle",
@@ -52,6 +54,29 @@ const Background = () => {
               density: { enable: true, area: 800 },
             },
           },
+          interactivity: {
+            events: {
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              repulse: {
+                distance: 100,
+                duration: 0.4,
+              },
+              push: {
+                quantity: 4,
+              },
+            },
+          },
+          detectRetina: true,
         }}
       />
     </div>
